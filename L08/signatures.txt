@@ -1,0 +1,9 @@
+1. methodOne, String
+
+2. methodTwo, char, int, String
+
+3. methodThree, char, int
+
+4. Auto, 
+
+5. Auto, String, String, float

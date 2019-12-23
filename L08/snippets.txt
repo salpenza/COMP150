@@ -1,0 +1,56 @@
+1.  int a;
+
+2.  private int grade;
+    private char letterGrade;
+
+3.  public class Lab {
+    public static final double TAX_RATE = 0.07;
+}
+
+4.  public TelevisionChannel(){
+    name = "";
+}
+
+5. public TelevisionChannel(String name, int number, boolean cable){
+    this.name = name;
+    this.number = number;
+    this.cable = cable;
+}
+
+6. public int getNumber(){
+    return number;
+}
+
+7. publc void setName(String name){
+    this.name = name;
+}
+
+8. private String toString(){
+    String retVal = "";
+    retVal += "Name: " + name + "\n";
+    retVal += "Number: " + number + "\n";
+    retVal += "Cable: " + cable + ";";
+    return retVal;
+}
+
+9. private boolean equals(Object o){
+    boolean retVal = false;
+
+    if(o instanceOf TelevisionChannel){
+        TelevisionChannel a = (TelevisionChannel) o;
+        if(name.equals(a.getName()) && Math.abs(number - a.getNumber) == 0 && a.getCable == true){
+            retVal = true;
+        }
+    }
+    return retVal;
+}
+
+10. public String Lab(boolean cable){
+    String n = "network";
+    String c = "cable";
+    if(cable == true){
+        return c;
+    } else { 
+        return n;
+    }
+}
