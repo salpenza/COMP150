@@ -1,3 +1,3 @@
 # COMP150
 
-CSUCI 
+COMP 150 CSUCI Kevin Scrivnor
