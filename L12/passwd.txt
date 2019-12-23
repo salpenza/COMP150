@@ -1,0 +1,5 @@
+kscrivnor:1001:wheel,admin:/home/kscrivnor
+shamilton:1002:staff:/home/shamilton
+lmoody:1003:/home/lmoody
+error:1x00:error:/home/error
+glowe:1004:manager:/home/glowe
