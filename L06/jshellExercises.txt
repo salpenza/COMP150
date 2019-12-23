@@ -1,0 +1,81 @@
+1. jshell> int [] a = {1,2,3}
+a ==> int[3] { 1, 2, 3 }
+
+jshell> public int productOfElements(int [] a){
+   ...> int product = 1;
+   ...> for(int i = 0; i < a.length; i++){
+   ...> product *= a[i];
+   ...> }
+   ...> return product;
+   ...> }
+|  created method productOfElements(int [])
+
+jshell> productOfElements(a)
+$3 ==> 6
+
+2. jshell> int [] a = {1,2,3,4,5}
+a ==> int[5] { 1, 2, 3, 4, 5 }
+
+jshell> public void zeroElements(int [] a){
+   ...> for(int i = 0; i < a.length; i++){
+   ...> a[i] = 0;
+   ...> }
+   ...> }
+|  created method zeroElements(int [])
+
+jshell> zeroElements(a)
+
+jshell> a
+a ==> int[5] { 0, 0, 0, 0, 0 }
+
+3. jshell> float [] a = {1,2,3,4,5}
+a ==> float[5] { 1.0, 2.0, 3.0, 4.0, 5.0 }
+
+jshell> public void multiplyArray(float [] a){
+   ...> for(int i = 0; i < a.length; i++){
+   ...> a[i] = a[i] * 2;
+   ...> }
+   ...> }
+|  created method multiplyArray(float [])
+
+jshell> multiplyArray(a)
+
+jshell> a
+a ==> float[5] { 2.0, 4.0, 6.0, 8.0, 10.0 }
+
+4.  jshell> double [] a = {1,2,3,4,5}
+a ==> double[5] { 1.0, 2.0, 3.0, 4.0, 5.0 }
+
+jshell> public double differenceArr(double [] a){
+   ...> double min = a[0];
+   ...> double max = a[0];
+   ...> double difference = 0.0;
+   ...> for(int i = 0; i < a.length; i++){
+   ...> if(a[i] > max){
+   ...> max = a[i];
+   ...> }else if(a[i] < min){
+   ...> min = a[i];
+   ...> }
+   ...> }
+   ...> difference = max - min;
+   ...> return difference;
+   ...> }
+|  created method differenceArr(double [])
+
+jshell> differenceArr(a)
+$17 ==> 4.0
+
+5. jshell> int [] a = {1,2,3,4,5}
+a ==> int[5] { 1, 2, 3, 4, 5 }
+
+jshell> public int arraySum(int [] a){
+   ...> int sum = 0;
+   ...> for(int i = 1; i < a.length; i += 2){
+   ...> sum += a[i];
+   ...> }
+   ...> return sum;
+   ...> }
+|  created method arraySum(int [])
+
+jshell> arraySum(a)
+$20 ==> 6

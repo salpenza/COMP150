@@ -1,0 +1,49 @@
+1. jshell> int [] a = new int [100];
+a ==> int[100] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ... , 0, 0, 0, 0, 0, 0, 0, 0 }
+
+jshell> Random rand = new Random();
+rand ==> java.util.Random@675d3402
+
+jshell> for(int i = 0; i < a.length; i++){
+   ...> a[i] = rand.nextInt(100 - 70 + 1) + 70;
+   ...> }
+
+jshell> a
+a ==> int[100] { 96, 82, 93, 76, 91, 97, 82, 91, 78, 94, 72, 90, 88, 90, 71, 89, 98, 70, 98, 92, 81, 96, 98, 76, 80, 78, 70, 98, 86, 82, 90, 74, 85, 78, 95, 88, 79, 70, 98, 91, 91, 83, 71, 72, 79, 80, 86, 89, 73, 81, 97, 90, 81, 89, 93, 83, 87, 77, 87, 84, 73, 97, 100, 78, 80, 71, 95, 80, 76, 85, 74, 80, 72, 81, 92, 89, 93, 100, 99, 97, 96, 99, 93, 87, 95, 72, 82, 82, 91, 75, 72, 89, 92, 90, 80, 70, 96, 93, 83, 88 }
+
+
+
+2. jshell> int count = 0;
+count ==> 0
+
+jshell> for(int i = 0; i < a.length; i++){
+   ...> if(a[i] > 90){
+   ...> count++;
+   ...> }
+   ...> }
+
+jshell> System.out.println(count + " percent of the elements in the array are greater than 90");
+34 percent of the elements in the array are greater than 90
+
+
+
+3. jshell> int sum = 0;
+sum ==> 0
+
+jshell> for(int i = 1; i < a.length; i += 2){
+   ...> sum += a[i];
+   ...> }
+
+jshell> System.out.println(sum);
+4233
+
+
+4. jshell> int sum = 0;
+sum ==> 0
+
+jshell> for(int i = 0; i < a.length; i += 2){
+   ...> sum += a[i];
+   ...> }
+
+jshell> System.out.println(sum);
+4308
